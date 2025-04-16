@@ -22,7 +22,7 @@ export default async function ServiceDetailPage({ params }) {
     return (
       <Container className="py-20 text-center">
         <h1 className="text-3xl font-bold text-slate-900">Service Not Found</h1>
-        <p className="mt-4 text-slate-600">The service you're looking for doesn't exist.</p>
+        <p className="mt-4 text-slate-600">The service you&apos;re looking for doesn&apos;t exist.</p>
         <Button asChild className="mt-8">
           <Link href="/#services">
             <ArrowLeft className="mr-2 h-4 w-4" />
