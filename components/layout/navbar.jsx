@@ -64,8 +64,9 @@ export function Navbar({ className, ...props }) {
           {/* Logo */}
           <Logo />
 
+          <div className="flex items-center gap-4">
           {/* Navigation Links (Middle) - Desktop */}
-          <div className="hidden items-center justify-center md:flex">
+          <div className="hidden items-center  justify-center md:flex">
             <ul className="flex space-x-4 lg:space-x-8">
               {navLinks.map((link, index) => (
                 <li key={index}>
@@ -108,6 +109,11 @@ export function Navbar({ className, ...props }) {
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
+
+
+
+          </div>
+
         </nav>
       </Container>
 
