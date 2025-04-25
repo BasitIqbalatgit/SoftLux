@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Phone, MessageCircle, Menu, X } from "lucide-react";
+import { Phone, MessageCircle, Menu, X, Mail } from "lucide-react";
 
 import { Container } from "../ui/container";
 import { Logo } from "../ui/logo";
@@ -83,20 +83,22 @@ export function Navbar({ className, ...props }) {
          
           {/* Contact Icons (Right) - Desktop */}
           <div className="hidden items-center space-x-3 lg:space-x-4 md:flex">
-            <Link 
-              href="tel:+1234567890" 
-              className="flex items-center justify-center rounded-full bg-slate-100 p-2 text-slate-700 transition-colors hover:bg-blue-100 hover:text-blue-600"
-              aria-label="Call us"
-            >
-              <Phone size={18} />
-            </Link>
-            <Link 
-              href="mailto:info@softlux.com" 
-              className="flex items-center justify-center rounded-full bg-slate-100 p-2 text-slate-700 transition-colors hover:bg-blue-100 hover:text-blue-600"
-              aria-label="Email us"
-            >
-              <MessageCircle size={18} />
-            </Link>
+            <div className="hidden lg:flex items-center gap-6">
+              <Link
+                className="flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                href="tel:07351783671"
+              >
+                <Phone className="h-4 w-4" />
+                Call Us
+              </Link>
+              <Link
+                className="flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                href="mailto:softluxcleaningservicesltd@gmail.com"
+              >
+                <Mail className="h-4 w-4" />
+                Email Us
+              </Link>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -149,15 +151,15 @@ export function Navbar({ className, ...props }) {
               </ul>
               <div className="mt-auto border-t border-slate-200 py-6">
                 <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3">
-                  <Button asChild variant="primary" className="w-full">
-                    <Link href="tel:+1234567890" className="flex items-center justify-center">
-                      <Phone size={18} className="mr-2" />
+                  <Button asChild size="sm" variant="outline" className="w-full">
+                    <Link href="tel:07351783671" className="flex items-center justify-center">
+                      <Phone className="mr-2 h-4 w-4" />
                       Call Us
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="mailto:info@softlux.com" className="flex items-center justify-center">
-                      <MessageCircle size={18} className="mr-2" />
+                  <Button asChild size="sm" variant="primary" className="w-full">
+                    <Link href="mailto:softluxcleaningservicesltd@gmail.com" className="flex items-center justify-center">
+                      <Mail className="mr-2 h-4 w-4" />
                       Email Us
                     </Link>
                   </Button>

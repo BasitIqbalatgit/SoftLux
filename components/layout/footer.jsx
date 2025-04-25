@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "../ui/container";
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Clock } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -59,25 +59,31 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-lg font-bold text-white">Contact Us</h3>
-            <ul className="space-y-4 text-sm text-slate-400">
+            <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="tel:07351783671" className="hover:text-white transition-colors duration-200">
+                  <Phone className="inline-block w-4 h-4 mr-2" />
+                  07351783671
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="mailto:softluxcleaningservicesltd@gmail.com" 
+                  className="flex items-center hover:text-white transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis"
+                >
+                  <Mail className="flex-shrink-0 w-4 h-4 mr-2" />
+                  <span className="truncate">softluxcleaningservicesltd@gmail.com</span>
+                </Link>
+              </li>
               <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-0.5 flex-shrink-0 text-blue-500" />
-                <span>123 Cleaning Street, City, State, 12345</span>
-              </li>
-              <li className="flex items-center">
-                <Phone size={18} className="mr-2 flex-shrink-0 text-blue-500" />
-                <Link href="tel:+1234567890" className="hover:text-white transition-colors duration-200">
-                  (123) 456-7890
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Mail size={18} className="mr-2 flex-shrink-0 text-blue-500" />
-                <Link href="mailto:info@cleanmaster.com" className="hover:text-white transition-colors duration-200">
-                  info@cleanmaster.com
-                </Link>
+                <Clock className="w-4 h-4 mr-2 mt-1" />
+                <div>
+                  <p>Monday to Sunday</p>
+                  <p>07:00 - 22:00</p>
+                </div>
               </li>
             </ul>
           </div>

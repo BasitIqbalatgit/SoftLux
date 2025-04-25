@@ -80,7 +80,7 @@ export function About() {
               ))}
             </ul>
             <Button asChild size="lg" variant="success" className="w-full sm:w-auto btn-hover-effect shadow-custom">
-              <Link href="/#contact" className="flex items-center justify-center">
+              <Link href="/#cta" className="flex items-center justify-center">
                 Contact Us
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

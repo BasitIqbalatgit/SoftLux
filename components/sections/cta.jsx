@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Phone, MessageCircle, CheckCircle } from "lucide-react";
+import { ArrowRight, Phone, MessageCircle, CheckCircle, Mail } from "lucide-react";
 
 import { Button } from "../ui/button";
 import { Container } from "../ui/container";
@@ -71,13 +71,15 @@ export function CTA() {
                   <Phone size={16} className="sm:size-20" />
                 </div>
                 <h3 className="mb-1 text-base sm:text-lg font-semibold text-white">Call Us</h3>
-                <p className="text-xs sm:text-sm text-blue-100">Available Mon-Sat, 8am - 7pm</p>
-                <Link 
-                  href="tel:+1234567890" 
-                  className="mt-1 sm:mt-2 inline-block text-white underline hover:text-blue-200 text-xs sm:text-sm"
-                >
-                  (123) 456-7890
-                </Link>
+                <p className="text-xs sm:text-sm text-blue-100">Available Mon-Sun, 07:00 - 22:00</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" variant="primary" className="w-full sm:w-auto">
+                    <Link href="tel:07351783671" className="flex items-center justify-center">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Call Us
+                    </Link>
+                  </Button>
+                </div>
               </div>
               <div className="rounded-lg bg-green-700/50 p-3 sm:p-4">
                 <div className="mb-2 flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-white text-black-600">
@@ -85,12 +87,14 @@ export function CTA() {
                 </div>
                 <h3 className="mb-1 text-base sm:text-lg font-semibold text-white">Email Us</h3>
                 <p className="text-xs sm:text-sm text-white">We'll respond within 24 hours</p>
-                <Link 
-                  href="mailto:info@softlux.com" 
-                  className="mt-1 sm:mt-2 inline-block text-white underline hover:text-blue-200 text-xs sm:text-sm"
-                >
-                  info@softlux.com
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
+                    <Link href="mailto:softluxcleaningservicesltd@gmail.com" className="flex items-center justify-center">
+                      <Mail className="mr-2 h-5 w-5" />
+                      Email Us
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
             

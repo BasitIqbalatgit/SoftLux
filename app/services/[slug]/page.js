@@ -63,11 +63,11 @@ export default async function ServiceDetailPage({ params }) {
               <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-blue-600 mr-2" />
-                  <span className="text-sm text-slate-700">60-90 minutes (average)</span>
+                  <span className="text-sm text-slate-700">07:00 - 22:00</span>
                 </div>
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-                  <span className="text-sm text-slate-700">Available 7 days a week</span>
+                  <span className="text-sm text-slate-700">Monday to Sunday</span>
                 </div>
                 <div className="flex items-center">
                   <Brush className="h-5 w-5 text-blue-600 mr-2" />
@@ -76,12 +76,12 @@ export default async function ServiceDetailPage({ params }) {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" variant="primary" className="w-full sm:w-auto btn-hover-effect shadow-custom">
-                  <Link href="/#cta" className="flex items-center justify-center">
-                    Book This Service
+                  <Link href="mailto:softluxcleaningservicesltd@gmail.com" className="flex items-center justify-center">
+                    Email Us
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
-                  <Link href="tel:+1234567890" className="flex items-center justify-center">
+                  <Link href="tel:07351783671" className="flex items-center justify-center">
                     Call For Inquiry
                   </Link>
                 </Button>
@@ -252,12 +252,12 @@ export default async function ServiceDetailPage({ params }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-emerald-600 hover:bg-emerald-50 w-full sm:w-auto">
-                <Link href="/#cta" className="flex items-center justify-center">
-                  Book Now
+                <Link href="mailto:softluxcleaningservicesltd@gmail.com" className="flex items-center justify-center">
+                  Email Us
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-emerald-500 w-full sm:w-auto">
-                <Link href="tel:+1234567890" className="flex items-center justify-center">
+              <Button asChild size="lg" variant="outline" className="border-white text-black hover:bg-emerald-500 w-full sm:w-auto">
+                <Link href="tel:07351783671" className="flex items-center justify-center">
                   Call Us
                 </Link>
               </Button>
