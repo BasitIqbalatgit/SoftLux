@@ -9,14 +9,13 @@ export function Logo({ className }) {
       <div className="flex items-center gap-2">
         <div className="relative h-12 w-32">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="SoftLux Logo"
             fill
             className="object-contain"
             priority
           />
         </div>
-        <span className="text-xs font-light text-gray-600">Cleaning Services</span>
       </div>
     </Link>
   );
