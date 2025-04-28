@@ -29,7 +29,7 @@ export function About() {
                     <div className="mb-4 sm:mb-6 mx-auto h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-success flex items-center justify-center">
                       <Heart size={32} className="sm:size-40" color="white" />
                     </div>
-                    <h3 className="mb-2 text-lg sm:text-xl font-bold text-success">Trusted Since 2010</h3>
+                    <h3 className="mb-2 text-lg sm:text-xl font-bold text-success">Trusted for over 5 years</h3>
                     <p className="text-xs sm:text-sm text-slate-600">Our commitment to quality has made us the trusted choice for thousands of customers.</p>
                   </div>
                 </div>
@@ -43,7 +43,7 @@ export function About() {
             <div className="absolute -bottom-6 sm:-bottom-10 left-0 right-0 mx-auto w-4/5 rounded-lg bg-white p-3 sm:p-4 shadow-lg">
               <div className="grid grid-cols-3 gap-1 sm:gap-2 text-center">
                 <div className="border-r border-slate-200 px-1 sm:px-2">
-                  <p className="text-lg sm:text-2xl font-bold text-success">10+</p>
+                  <p className="text-lg sm:text-2xl font-bold text-success">5+</p>
                   <p className="text-[10px] sm:text-xs text-slate-600">Years Experience</p>
                 </div>
                 <div className="border-r border-slate-200 px-1 sm:px-2">
@@ -66,7 +66,7 @@ export function About() {
               High-Quality Cleaning Services You Can Trust
             </h2>
             <p className="mb-4 sm:mb-6 text-sm sm:text-base text-slate-600">
-              SoftLux has been providing exceptional cleaning services since 2010. Our dedicated team of cleaning professionals is committed to delivering the highest quality results for your home or business.
+              SoftLux has been providing exceptional cleaning services for over 5 years. Our dedicated team of cleaning professionals is committed to delivering the highest quality results for your home or business.
             </p>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base text-slate-600">
               We use only the finest equipment and eco-friendly cleaning solutions to ensure your space isn't just clean, but healthy and safe for your family, employees, and customers.

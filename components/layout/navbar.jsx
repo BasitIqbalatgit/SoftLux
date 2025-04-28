@@ -1,8 +1,7 @@
-// Navbar.jsx
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Phone, MessageCircle, Menu, X, Mail } from "lucide-react";
+import { Phone, Menu, X, Mail } from "lucide-react";
 
 import { Container } from "../ui/container";
 import { Logo } from "../ui/logo";
@@ -13,14 +12,9 @@ export function Navbar({ className, ...props }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll effect for navbar
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,12 +23,7 @@ export function Navbar({ className, ...props }) {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-    // Prevent scrolling when menu is open
-    if (!mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = mobileMenuOpen ? "auto" : "hidden";
   };
 
   const navLinks = [
@@ -54,28 +43,29 @@ export function Navbar({ className, ...props }) {
           : "bg-[#010D36]"
       )}
     >
-      <Container className="px-4 sm:px-6 md:px-8">
-        <nav
-          className={cn(
-            "flex h-16 items-center justify-between py-2 md:py-4",
-            className
-          )}
-          {...props}
-        >
-          {/* Logo on the left */}
+      {/* Full-width nav with padding */}
+      <nav
+        className={cn(
+          "w-full py-2 md:py-4 px-4 sm:px-6 md:px-8",
+          className
+        )}
+        {...props}
+      >
+        <div className="flex h-8 items-center justify-between">
+          {/* Logo */}
           <div className="flex-shrink-0">
             <Logo />
           </div>
 
-          {/* Navigation Links and Contact - All on the right */}
+          {/* Right side */}
           <div className="flex items-center gap-4">
-            {/* Navigation Links - Desktop */}
-            <div className="hidden items-center justify-center md:flex">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
               <ul className="flex space-x-4 lg:space-x-8">
                 {navLinks.map((link, index) => (
                   <li key={index}>
-                    <Link 
-                      href={link.href} 
+                    <Link
+                      href={link.href}
                       className="text-sm font-medium text-slate-200 transition-colors hover:text-blue-300"
                     >
                       {link.label}
@@ -84,8 +74,8 @@ export function Navbar({ className, ...props }) {
                 ))}
               </ul>
             </div>
-           
-            {/* Contact Icons - Desktop */}
+
+            {/* Desktop Contact Icons */}
             <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
               <Link
                 className="flex items-center gap-2 text-sm font-medium text-slate-200 hover:text-blue-300 transition-colors"
@@ -114,25 +104,24 @@ export function Navbar({ className, ...props }) {
               </button>
             </div>
           </div>
-        </nav>
-      </Container>
+        </div>
+      </nav>
 
-      {/* Mobile Menu - Dark Theme */}
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 flex flex-col">
-          {/* Simple overlay */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/70"
             onClick={toggleMobileMenu}
           ></div>
-          
+
           <div className="relative z-50 mt-16 flex flex-1 flex-col bg-[#010D36] rounded-t-3xl shadow-lg">
             <Container className="flex flex-1 flex-col px-6">
               <ul className="flex flex-col space-y-2 py-8">
                 {navLinks.map((link, index) => (
                   <li key={index}>
-                    <Link 
-                      href={link.href} 
+                    <Link
+                      href={link.href}
                       className="block py-3 text-lg font-medium text-slate-200 hover:text-blue-300 transition-colors"
                       onClick={() => {
                         setMobileMenuOpen(false);
@@ -149,14 +138,30 @@ export function Navbar({ className, ...props }) {
               </ul>
               <div className="mt-auto border-t border-blue-900/50 py-6">
                 <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3">
-                  <Button asChild size="sm" variant="outline" className="w-full border-slate-300 text-slate-200 hover:bg-blue-900 hover:text-white">
-                    <Link href="tel:07351783671" className="flex items-center justify-center">
+                  <Button
+                    asChild
+                    size="sm"
+                    variant="outline"
+                    className="w-full border-slate-300 text-slate-200 hover:bg-blue-900 hover:text-white"
+                  >
+                    <Link
+                      href="tel:07351783671"
+                      className="flex items-center justify-center"
+                    >
                       <Phone className="mr-2 h-4 w-4" />
                       Call Us
                     </Link>
                   </Button>
-                  <Button asChild size="sm" variant="primary" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    <Link href="mailto:softluxcleaningservicesltd@gmail.com" className="flex items-center justify-center">
+                  <Button
+                    asChild
+                    size="sm"
+                    variant="primary"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                  >
+                    <Link
+                      href="mailto:softluxcleaningservicesltd@gmail.com"
+                      className="flex items-center justify-center"
+                    >
                       <Mail className="mr-2 h-4 w-4" />
                       Email Us
                     </Link>

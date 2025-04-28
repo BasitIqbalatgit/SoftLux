@@ -18,15 +18,13 @@ export function Hero() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="mb-4 sm:mb-6 inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs sm:text-sm font-medium text-blue-600">
               <span className="mr-2 h-2 w-2 rounded-full bg-blue-600"></span>
-              Professional Cleaning Services
+              Carpet & Apostel Cleaning Services
             </div>
-            <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900">
-              Make Your Space <span className="text-gradient">Spotless</span> &
-              Fresh
+            <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
+              Professional Carpet & Apostel <span className="text-gradient">Cleaning Services</span> 
             </h1>
             <p className="mb-6 sm:mb-8 max-w-md text-base sm:text-lg text-slate-600 px-4 sm:px-0">
-              We provide expert cleaning solutions for your home and business.
-              Our professional team delivers exceptional results every time.
+            Premium cleaning services tailored for homes and businesses in London and its surrounding areas. Experience spotless results with a touch of class.
             </p>
             <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0 w-full sm:w-auto px-4 sm:px-0">
               <Button

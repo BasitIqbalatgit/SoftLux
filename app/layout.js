@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "CleanMaster - Professional Cleaning Services",
+  title: "SoftLux Cleaning Services Limited",
   description:
     "Professional cleaning services including carpet cleaning, upholstery cleaning, and more. We provide top-quality cleaning solutions for homes and businesses.",
   keywords:

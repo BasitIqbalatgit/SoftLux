@@ -140,7 +140,7 @@ export function Testimonials() {
                   ))}
                 </div>
                 <p className="ml-2 text-sm text-slate-600">
-                  <span className="font-semibold">4.8 out of 5</span> based on 200+ reviews
+                  <span className="font-semibold">5 out of 5</span> based on 200+ reviews
                 </p>
               </div>
             </div>

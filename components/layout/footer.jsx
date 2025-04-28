@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Clock } from "lucide
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-slate-950 text-slate-200">
       <Container className="py-12">
@@ -18,18 +18,22 @@ export function Footer() {
               We provide top-quality cleaning solutions for homes and businesses.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-slate-400 hover:text-white transition-colors duration-200">
+              <Link href="https://www.facebook.com/profile.php?id=61567719046340"
+               target="_blank"
+                rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors duration-200">
                 <Facebook size={18} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-slate-400 hover:text-white transition-colors duration-200">
+              <Link
+                href="https://www.instagram.com/softluxcleaningservicesltd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors duration-200"
+              >
                 <Instagram size={18} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-slate-400 hover:text-white transition-colors duration-200">
-                <Twitter size={18} />
-                <span className="sr-only">Twitter</span>
-              </Link>
+
             </div>
           </div>
 
@@ -70,8 +74,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="mailto:softluxcleaningservicesltd@gmail.com" 
+                <Link
+                  href="mailto:softluxcleaningservicesltd@gmail.com"
                   className="flex items-center hover:text-white transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis"
                 >
                   <Mail className="flex-shrink-0 w-4 h-4 mr-2" />
@@ -88,10 +92,10 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Copyright */}
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-          <p>&copy; {currentYear} CleanMaster. All rights reserved.</p>
+          <p>&copy; {currentYear} SoftLux Cleaning Services Limited. All rights reserved.</p>
           <div className="mt-2 flex justify-center space-x-4 text-xs">
             <Link href="#" className="hover:text-white transition-colors duration-200">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors duration-200">Terms of Service</Link>
