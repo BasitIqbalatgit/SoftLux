@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "../ui/container";
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Clock } from "lucide-react";
+import { FcGoogle } from "react-icons/fc"; // Add this for Google icon
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,14 +16,14 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold text-white">CleanMaster</h3>
             <p className="mb-4 text-sm text-slate-400">
-              Professional cleaning services with over 10 years of experience.
+              Professional cleaning services with over 5+ years of experience.
               We provide top-quality cleaning solutions for homes and businesses.
             </p>
             <div className="flex space-x-4">
               <Link href="https://www.facebook.com/profile.php?id=61567719046340"
-               target="_blank"
+                target="_blank"
                 rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors duration-200">
-                <Facebook size={18} />
+                <FaFacebookF size={18} />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
@@ -30,9 +32,19 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors duration-200"
               >
-                <Instagram size={18} />
+                <FaInstagram size={18} />
                 <span className="sr-only">Instagram</span>
               </Link>
+              <Link
+                href="https://www.google.com/search?client=ms-android-samsung-ss&sca_esv=1e618ffcd8ec6d84&sxsrf=AHTn8zrFuxtqMOE74JfhYTjI5F1JQkyIyw:1745861266844&q=softlux+cleaning+services+ltd+reviews&uds=ABqPDvyHZ_Llhf9RlCLgpvH8tV0aGL9SpSMLlkDIwzxNmrdUNYvJMCeVr1eQJ6Z26hJOgPc-Iyq63bLXtcI1WUaEz29VFoSbQVXDSisnrEgpSmMVdNUefIta5sUCbSChBrw90aP0Dta9RohVrtjJN0Ef9mqnXAqGbOTq-gmSQEwzys8XBrgM6rjvq5k5TZfpI5UC_VCwtns6FTHqC6gc2qMJBcYxjn4RFZ5pXaE5v1Tk9CBfD2nUUCLwZ5q1qtdeXwJTrc3oJs0cUCgNmAFkemswinCIzm6tyoR3f-o5-ios9iFZioZbJdR0r1VzTbGWC5XlYFLdqbN91VS1Zfega8Ey7o-QMyIgBlmuTCVU9Gk9YPcQ8vKAqJSuai9b3ZJH86lsi8O0TSMSASYKiy9uoUwq26A6dsF7JnDuVKlGPw-TiBGszWe9gaNyBVkVt2PNsmBCtCxZQmMV&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2Kzc4atQSKY5QxjZ2zUj0V_ndGhYdDynI3kM7k-aa6TQj6ZpSon2FQPW1sIuRJxEq3rjrUezjmbkpGIS4krGMZTtf17MY3Iin0ur9X8gbnlQ6m60phdg%3D%3D&sa=X&ved=2ahUKEwjssIyFoPuMAxUpQkEAHTi5M9oQk8gLegQIIBAB&ictx=1&stq=1&cs=1&lei=kroPaOyfM6mEhbIPuPLO0Q0#ebo=2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors duration-200"
+              >
+                <FcGoogle size={18} />
+                <span className="sr-only">Google</span>
+              </Link>
+
 
             </div>
           </div>
@@ -70,7 +82,7 @@ export function Footer() {
               <li>
                 <Link href="tel:07351783671" className="hover:text-white transition-colors duration-200">
                   <Phone className="inline-block w-4 h-4 mr-2" />
-                  07351783671
+                  07351 783671
                 </Link>
               </li>
               <li>
@@ -95,7 +107,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-          <p>&copy; {currentYear} SoftLux Cleaning Services Limited. All rights reserved.</p>
+          <p>&copy; {currentYear} SoftLux Cleaning Services Ltd. All rights reserved.</p>
           <div className="mt-2 flex justify-center space-x-4 text-xs">
             <Link href="#" className="hover:text-white transition-colors duration-200">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors duration-200">Terms of Service</Link>

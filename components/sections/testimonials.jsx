@@ -140,12 +140,11 @@ export function Testimonials() {
                   ))}
                 </div>
                 <p className="ml-2 text-sm text-slate-600">
-                  <span className="font-semibold">5 out of 5</span> based on 200+ reviews
+                  <span className="font-semibold">5 out of 5</span> based on Google reviews
                 </p>
               </div>
             </div>
             <div className="flex items-center space-x-2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/200px-Yelp_Logo.svg.png" alt="Yelp" className="h-6" />
               <img src="/google.jpeg" alt="Google" className="h-6" />
             </div>
           </div>
