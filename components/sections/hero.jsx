@@ -22,7 +22,7 @@ export function Hero() {
               Carpet & Upholstery Cleaning Services
             </div>
             <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 animate-slide-in-left animate-delay-200">
-              Professional Carpet & Apostel <span className="text-gradient animate-gradient">Cleaning Services</span> 
+              Professional Carpet & Upholstory <span className="text-gradient animate-gradient">Cleaning Services</span> 
             </h1>
             <p className="mb-6 sm:mb-8 max-w-md text-base sm:text-lg text-slate-600 px-4 sm:px-0 animate-slide-in-left animate-delay-400">
               Premium cleaning services tailored for homes and businesses in London and its surrounding areas. Experience spotless results with a touch of class.
